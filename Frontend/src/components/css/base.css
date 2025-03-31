@@ -1,0 +1,7 @@
+:root {
+    --bg: #f9f9f8;
+    --blue: #6d83f2;
+    --w-blue: rgb(106, 152, 240);
+    --black: #383838;
+    --linear-bg: background-image: linear-gradient(134deg, rgb(106, 152, 240), rgb(73, 97, 220) 99%);
+}
