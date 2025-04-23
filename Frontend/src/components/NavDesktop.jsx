@@ -8,35 +8,40 @@ export default function NavDesktop() {
 
   return (
     <div
-      className={`w-full h-[60px] flex justify-between items-center px-[10.2vw] py-[20px] md:bg-[var(--bg)] ${
+      className={`w-full h-[60px] flex justify-between items-center px-[5vw] md:px-[10vw] py-[20px] md:bg-[var(--bg)] ${
         mobileMenuOpen
           ? "bg-[var(--bg)] transition-all duration-200 ease-in-out"
           : ""
-      } fixed top-0 mont md:shadow-black/4 md:shadow-lg `}
+      } fixed top-0 mont md:shadow-black/4 md:shadow-lg z-50`}
     >
-      <img
-        src="/logo.webp"
-        alt="Logo"
-        width={35}
-        height={35}
-        className="mt-1 hidden md:block"
-      />
+      {/* Logo */}
+      <div className="flex items-center">
+        <img
+          src="/logo.webp"
+          alt="Logo"
+          width={35}
+          height={35}
+          className="mt-1 hidden md:block"
+        />
+      </div>
 
       {/* Desktop Navigation */}
-      <ul className="nav-desktop hidden md:flex gap-[3vw] text-[13px] text-[var(--blue)]">
-        <li className="cursor-pointer hover:text-[var(--black)]">home</li>
-        <li className="cursor-pointer hover:text-[var(--black)]">about me</li>
-        <li className="cursor-pointer hover:text-[var(--black)]">
-          technologies
-        </li>
-        <li className="cursor-pointer hover:text-[var(--black)]">projects</li>
-        <li className="cursor-pointer hover:text-[var(--black)]">contact</li>
-      </ul>
+      <div className="hidden md:flex items-center">
+        <ul className="nav-desktop flex gap-[3vw] text-[13px] text-[var(--blue)]">
+          <li className="cursor-pointer hover:text-[var(--black)]">home</li>
+          <li className="cursor-pointer hover:text-[var(--black)]">about me</li>
+          <li className="cursor-pointer hover:text-[var(--black)]">
+            technologies
+          </li>
+          <li className="cursor-pointer hover:text-[var(--black)]">projects</li>
+          <li className="cursor-pointer hover:text-[var(--black)]">contact</li>
+        </ul>
+      </div>
 
       {/* Mobile Menu Button */}
-      <div className="w-full items-end justify-end relative text-end">
+      <div className="flex md:hidden items-center">
         <button
-          className="md:hidden text-xl "
+          className="text-xl"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {!mobileMenuOpen ? (
@@ -47,13 +52,13 @@ export default function NavDesktop() {
         </button>
       </div>
 
-      {/* Mobile Navigation with Animated Height Transition */}
+      {/* Mobile Navigation */}
       <div
-        className={`absolute top-[55px] left-0 w-full bg-[var(--bg)] overflow-hidden transition-all duration-300 ${
+        className={`absolute top-[60px] left-0 w-full bg-[var(--bg)] overflow-hidden transition-all duration-300 ${
           mobileMenuOpen ? "max-h-[300px] py-4" : "max-h-0 py-0"
         }`}
       >
-        <ul className="flex flex-col items-center relative gap-3 text-[13px] text-[var(--blue)]">
+        <ul className="flex flex-col items-center gap-3 text-[13px] text-[var(--blue)]">
           <li className="cursor-pointer hover:text-[var(--black)]">home</li>
           <li className="cursor-pointer hover:text-[var(--black)]">about me</li>
           <li className="cursor-pointer hover:text-[var(--black)]">
