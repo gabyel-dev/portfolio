@@ -6,7 +6,7 @@ const menu = <FontAwesomeIcon icon={faBars} className="text-xl" />;
 
 export default function NavDesktop() {
   return (
-    <div className="w-full h-[55px] flex justify-between items-center px-[10.2vw] py-[20px] bg-[var(--bg)] shadow-gray-200 shadow-md fixed top-0 mont">
+    <div className="w-full h-[55px] flex justify-between items-center px-[5vw] py-[20px] fixed top-0 mont">
       <img
         src="/logo.webp"
         alt="Logo"
