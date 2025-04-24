@@ -108,7 +108,7 @@ export default function Home() {
           </div>
           {/* Colors Section - Moved to a Better Position */}
           <section className="colors flex justify-center items-center gap-[6px] p-3 mt-3 body-color shadow rounded-[8px] w-max relative bottom-17 md:bottom-11 right-[0px]  md:right-[170px]">
-            <div className="a" onClick={handleCopy}></div>
+            <div className="a " onClick={handleCopy}></div>
             <div className="s" onClick={handleCopy}></div>
             <div className="d" onClick={handleCopy}></div>
             <div className="f" onClick={handleCopy}></div>
