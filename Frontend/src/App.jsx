@@ -1,5 +1,5 @@
-import Home from "./components/Home";
-import About from "./components/About";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
 import NavDesktop from "./components/NavDesktop";
 import "../src/index.css";
 
