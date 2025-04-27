@@ -54,11 +54,11 @@ export default function NavDesktop() {
 
       {/* Mobile Navigation */}
       <div
-        className={`absolute top-[60px] left-0 w-full bg-[var(--bg)] overflow-hidden transition-all duration-300 ${
+        className={`absolute shadow-lg/5 top-[60px] left-0 w-full bg-[var(--bg)] overflow-hidden transition-all duration-300 ${
           mobileMenuOpen ? "max-h-[300px] py-4" : "max-h-0 py-0"
         }`}
       >
-        <ul className="flex flex-col items-center gap-3 text-[13px] text-[var(--blue)]">
+        <ul className="flex flex-col items-center gap-3 text-[13px] text-[var(--blue)]  ">
           <li className="cursor-pointer hover:text-[var(--black)]">home</li>
           <li className="cursor-pointer hover:text-[var(--black)]">about me</li>
           <li className="cursor-pointer hover:text-[var(--black)]">

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <NavDesktop />
-      <div className="pt-[100px] px-[5vw] md:pt-[180px] lg:pt-[210px] md:px-[10vw]">
+      <div className="pt-[80px] px-[5vw] md:pt-[180px] lg:pt-[210px] md:px-[10vw]">
         <Home />
         <About />
       </div>
