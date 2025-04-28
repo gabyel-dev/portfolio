@@ -2,9 +2,30 @@
     --bg: #f9f9f8;
     --blue: #6d83f2;
     --w-blue: rgb(106, 152, 240);
+    --light-blue: rgb(199, 208, 255);
     --black: #383838;
     --linear-bg: background-image: linear-gradient(134deg, rgb(106, 152, 240), rgb(73, 97, 220) 99%);
 }
+
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+::-webkit-scrollbar-button {
+  display: block;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--blue);
+  border-radius: 20px;
+  border: 3px solid transparent;
+  background-clip: padding-box;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
 
 .linear-gradient {
     background-image: linear-gradient(
@@ -12,4 +33,28 @@
     rgb(106, 152, 240) 0%,
     rgb(73, 97, 220) 99%
   );
+}
+
+.__skew_bg__ {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  transform: translateY(265px) skewY(-1deg);
+  background-color: var(--blue);
+}
+
+.__skew_bg__ .content-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center the content inside */
+  transform: skewY(1deg); /* Neutralize skew for the content */
+}
+
+.__skew_bg__ .__quotes__ {
+  transform: skewY(1deg); /* Neutralize skew for the content */
 }

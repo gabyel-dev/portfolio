@@ -32,21 +32,21 @@ export default function Home() {
             <p className="hello text-[0.875em] sm:text-[1em] md:text-[1.125em] lg:text-[1.25em] xl:text-[1em] pt-4">
               Hello, I'm
             </p>
-            <h1 className="title text-base text-[1.8em] md:text-[2.7em] lg:text-[3em] font-black leading-10 text-nowrap md:text-wrap">
+            <h1 className="title text-base text-[1.8em] md:text-[2.7em] lg:text-[3em] font-black leading-10 text-nowrap md:text-wrap overflow-hidden">
               GABRIEL GUBAN
             </h1>
-            <p className="desc text-[1.03em] md:text-[1.1em] lg:text-[1.2em] xl:text-[1.3em] pt-0 md:pt-[10px] md:leading-7">
+            <p className="desc text-[1.03em] md:text-[1.1em] lg:text-[1.2em] xl:text-[1.3em] pt-0 md:pt-[10px] md:leading-7 overflow-hidden">
               FULL-STACK WEB DEVELOPER
             </p>
           </div>
 
-          <button className="resume-btn rounded-[5px] text-[12px] text-white px-3 h-[38px] flex justify-center items-center mb-6 mt-4 cursor-pointer">
+          <button className="resume-btn rounded-[5px] text-[12px] text-white px-3 h-[38px] flex justify-center items-center mb-6 mt-4 cursor-pointer overflow-hidden">
             Download Resume
           </button>
 
           <section className="socials">
             <ul className="links flex gap-8">
-              <li className="hover:-translate-y-1 duration-400 transition">
+              <li className="hover:-translate-y-1 duration-400">
                 <a
                   href="https://www.linkedin.com/in/gab-guban-474237334/"
                   aria-label="LinkedIn"
@@ -108,7 +108,7 @@ export default function Home() {
           </div>
           {/* Colors Section - Moved to a Better Position */}
           <section className="colors flex justify-center items-center gap-[6px] p-3 mt-3 body-color shadow-black/7 shadow-lg rounded-[8px] w-max relative bottom-17 md:bottom-11 right-[0px]  md:right-[145px] lg:right-[175px]">
-            <div className="a " onClick={handleCopy}></div>
+            <div className="a" onClick={handleCopy}></div>
             <div className="s" onClick={handleCopy}></div>
             <div className="d" onClick={handleCopy}></div>
             <div className="f" onClick={handleCopy}></div>

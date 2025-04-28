@@ -8,7 +8,7 @@ export default function NavDesktop() {
 
   return (
     <div
-      className={`w-full h-[60px] flex justify-between items-center px-[5vw] md:px-[10vw] py-[20px] md:bg-[var(--bg)] ${
+      className={`w-full h-[60px] flex justify-between items-center px-[5vw] md:px-[10vw] py-[20px] md:bg-[var(--bg)]  ${
         mobileMenuOpen
           ? "bg-[var(--bg)] transition-all duration-200 ease-in-out"
           : ""
