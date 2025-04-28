@@ -24,6 +24,7 @@
 
 ::-webkit-scrollbar-track {
   background: var(--bg);
+  padding: 0;
 }
 
 

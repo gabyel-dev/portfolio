@@ -41,7 +41,7 @@ export default function NavDesktop() {
       {/* Mobile Menu Button */}
       <div className="flex md:hidden items-center">
         <button
-          className="text-xl"
+          className="__menu_button__ text-xl"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           {!mobileMenuOpen ? (

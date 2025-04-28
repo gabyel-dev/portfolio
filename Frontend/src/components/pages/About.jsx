@@ -9,7 +9,7 @@ const server = <FontAwesomeIcon icon={faPaintBrush} />;
 export default function About() {
   return (
     <div className="w-full h-fit py-10 pt-40 md:pt-10 overflow-x-hidden">
-      <h1 className="mont text-center text-[var(--blue)] font-black text-[28px] pb-7">What can i do</h1>
+      <h1 className="mont text-center text-[var(--blue)] font-black text-[28px] pb-10">What can i do</h1>
       <div className="flex flex-col items-center justify-center gap-4 md:flex md:flex-row md:flex-wrap lg:flex-nowrap md:gap-[3vw] lg:justify-between pb-6">
         <div className="py-[20px] px-[30px] rounded-lg shadow-black/7 shadow-lg flex flex-col justify-evenly items-center text-center h-76 w-77 md:w-[35vw] md:min-w-60 md:max-w-77 bg-[var(--bg)] hover:-translate-y-4 duration-400">
           <div className="linear-gradient rounded-full p-[30px] text-[30px] w-[100px] h-[100px] text-[var(--bg)] flex items-center justify-center ">
@@ -51,7 +51,7 @@ export default function About() {
       <div className="pt-20 flex flex-col justify-center items-center">
           <Skew />
           <h1 className="mont text-center text-[var(--blue)] font-black text-[28px] pb-7">About me</h1>
-          <img src="/profile.png" alt="Profile"  className="__profile__ rounded-full border-6 border-[var(--bg)] w-60 h-60 md:w-70 md:h-70" />
+          <img src="/profile_picture.webp" alt="Profile"  className="__profile__ rounded-full border-6 border-[var(--bg)] w-60 h-60 md:w-70 md:h-70" />
         </div>
 
         
