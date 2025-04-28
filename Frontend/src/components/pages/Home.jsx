@@ -46,7 +46,7 @@ export default function Home() {
 
           <section className="socials">
             <ul className="links flex gap-8">
-              <li>
+              <li className="hover:-translate-y-1 duration-400 transition">
                 <a
                   href="https://www.linkedin.com/in/gab-guban-474237334/"
                   aria-label="LinkedIn"
@@ -56,7 +56,7 @@ export default function Home() {
                   {linkedIn}
                 </a>
               </li>
-              <li>
+              <li className="hover:-translate-y-1 duration-400">
                 <a
                   href="https://www.facebook.com/gab.guban"
                   aria-label="Facebook"
@@ -66,7 +66,7 @@ export default function Home() {
                   {facebook}
                 </a>
               </li>
-              <li>
+              <li className="hover:-translate-y-1 duration-400">
                 <a
                   href="https://github.com/dv-gb"
                   aria-label="GitHub"
