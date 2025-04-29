@@ -82,10 +82,10 @@ export default function Home() {
 
         {/* Right Container */}
         <div className="right flex flex-col max-w-[500px] h-[fit-content] min-w-[fit-content] items-center">
-          <div className="_right__container relative z-0 scale-80 md:scale-100">
+          <div className="_right__container relative z-0  md:scale-100">
             {/* Card Section */}
-            <section className="dev-card min-w-[330px] max-w-fit min-h-[240px] md:scale-90 lg:scale-100 bg-[#fbfafa] rounded-[10px] shadow-black/7 shadow-lg text-[var(--blue)] text-nowrap ">
-              <ol className="card-content">
+            <section className="dev-card px-[30px] py-[30px] md:px-[30px] md:py-[40px] min-h-[220px]  md:min-w-[330px] md:max-w-fit md:min-h-[240px] md:scale-90 lg:scale-100 bg-[#fbfafa] rounded-[10px] shadow-black/7 shadow-lg text-[var(--blue)] text-nowrap ">
+              <ol className="card-content text-[.76em] md:text-[1em] leading-7 md:leading-8">
                 <li>
                   1 &nbsp;&nbsp;class <b>Person</b> {"{"}
                 </li>
@@ -107,7 +107,7 @@ export default function Home() {
             </section>
           </div>
           {/* Colors Section - Moved to a Better Position */}
-          <section className="colors flex justify-center items-center gap-[6px] p-3 mt-3 body-color shadow-black/7 shadow-lg rounded-[8px] w-max relative bottom-17 md:bottom-11 right-[0px]  md:right-[145px] lg:right-[175px]">
+          <section className="colors flex justify-center items-center gap-[6px] p-3 mt-3 body-color shadow-black/7 shadow-lg rounded-[8px] w-max relative bottom-11 md:bottom-11 right-[0px]  md:right-[145px] lg:right-[175px]">
             <div className="a" onClick={handleCopy}></div>
             <div className="s" onClick={handleCopy}></div>
             <div className="d" onClick={handleCopy}></div>
