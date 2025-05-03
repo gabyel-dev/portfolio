@@ -1,10 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCode, faPaintBrush, faMobileScreenButton } from "@fortawesome/free-solid-svg-icons";
 import Skew from "../skewBG";
+import { faNodeJs, faPython, faReact } from "@fortawesome/free-brands-svg-icons";
 
 const code = <FontAwesomeIcon icon={faCode} />;
 const js = <FontAwesomeIcon icon={faMobileScreenButton} />;
 const server = <FontAwesomeIcon icon={faPaintBrush} />;
+
+const react = <FontAwesomeIcon icon={faReact} />
+const nodeJS = <FontAwesomeIcon icon={faNodeJs} />
+const py = <FontAwesomeIcon icon={faPython} />
 
 export default function About() {
   return (
@@ -48,13 +53,34 @@ export default function About() {
         </div>
       </div>
 
-      <div className="pt-20 flex flex-col justify-center items-center">
-          <Skew />
-          <h1 className="mont text-center text-[var(--blue)] font-black text-[28px] pb-7">About me</h1>
-          <img src="/profile_picture.webp" alt="Profile"  className="__profile__ rounded-full border-6 border-[var(--bg)] w-60 h-60 md:w-70 md:h-70" />
+          <div className="pt-20 flex flex-col justify-center items-center">
+            <Skew />
+            <h1 className="mont text-center text-[var(--blue)] font-black text-[28px] pb-7">About me</h1>
+            <img src="/profile_picture.webp" alt="Profile"  className="__profile__ rounded-full border-6 border-[var(--bg)] w-60 h-60 md:w-70 md:h-70" />
         </div>
 
-        
+        {/* techstack */}
+        <div className="flex flex-col pt-220 md:pt-120">
+          <h1 className="mont text-center text-[var(--blue)] font-black text-[28px] pb-20">My Skillsets</h1>
+
+          <div className="flex justify-between">
+            <div className="text-6xl md:text-8xl text-[var(--black)] ">
+              {react}
+            </div>
+
+            <div className="text-6xl md:text-8xl text-[var(--black)] ">
+              {nodeJS}
+            </div>
+
+            <div className="text-6xl md:text-8xl text-[var(--black)] ">
+              {py}
+            </div>
+
+            <div className="">
+              <img src="/sql.webp" alt="postgreSQL Logo" className="md:w-[8rem] md:h-[8rem] w-[5rem] h-[5rem]" />
+            </div>
+          </div>
+        </div>
     </div>
     
   );
