@@ -63,7 +63,7 @@ export default function About() {
         <div className="flex flex-col pt-220 md:pt-120">
           <h1 className="mont text-center text-[var(--blue)] font-black text-[28px] pb-20">My Skillsets</h1>
 
-          <div className="flex justify-between">
+          <div className="flex justify-between md:justify-center md:gap-[11vw]">
             <div className="text-6xl md:text-8xl text-[var(--black)] ">
               {react}
             </div>
