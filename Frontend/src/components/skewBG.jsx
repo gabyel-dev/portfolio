@@ -39,7 +39,7 @@ export default function Skew() {
 
             <div className="w-full md:max-w-90 h-fit md:w-90  bg-[var(--bg)] p-7 rounded-lg shadow-lg shadow-black/7 flex flex-col gap-4 hover:-translate-y-4 duration-400 ">
               <p className="text-md font-semibold karla">
-              “Creativity fuels the unstoppable train of passion. .”
+              “Creativity fuels the unstoppable train of passion.”
               </p>
               <p className="text-end text-[0.8em] italic mont">
                 -gabyel
