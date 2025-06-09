@@ -38,25 +38,27 @@ export default function Projects() {
 
     return (
         <>
-        <div className="__projects__  w-full h-fit  py-10 overflow-x-hidden">
-            <h1 className="mont text-center text-[var(--blue)] font-black text-[28px] pb-10">Side Projects</h1>
+       <div className="__projects__ w-full h-fit py-10 overflow-x-hidden">
+    <h1 className="mont text-center text-[var(--blue)] font-black text-2xl sm:text-3xl pb-10">
+        Side Projects
+    </h1>
 
-            <div className="flex flex-col gap-[100px]">
-                {proj.map((project) => (
-                    <ProjCard
-                        key={project.id}
-                        title={project.title}
-                        description={project.description}
-                        link={project.link}
-                        lang1={project.lang1}
-                        lang2={project.lang2}
-                        lang3={project.lang3}
-                        image={project.image}
-                        
-                    />
-                ))}
-            </div>
-        </div>
+    <div className="flex flex-col gap-[60px] sm:gap-[80px] lg:gap-[100px] m-2">
+        {proj.map((project) => (
+            <ProjCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                link={project.link}
+                lang1={project.lang1}
+                lang2={project.lang2}
+                lang3={project.lang3}
+                image={project.image}
+            />
+        ))}
+    </div>
+</div>
+
         </>
     )
 }
